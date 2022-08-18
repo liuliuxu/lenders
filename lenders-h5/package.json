@@ -1,0 +1,21 @@
+{
+  "name": "rupee-plus-h5",
+  "version": "1.0.0",
+  "description": "移动端h5",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:kim_home/rupee-plus-h5.git"
+  },
+  "author": "kim",
+  "license": "ISC",
+  "dependencies": {
+    "browserslist": "^4.14.0",
+    "caniuse-lite": "^1.0.30001120",
+    "flyio": "^0.6.14",
+    "moment": "^2.27.0"
+  }
+}

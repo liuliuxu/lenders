@@ -1,0 +1,175 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+/* flex布局 */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+.col-20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.col-25 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.col-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* 上下垂直居中 */
+
+.align-items-center {
+  align-items: center;
+}
+
+/* 居上 */
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+/* 居下 */
+
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+/* 居中 */
+
+.justify-content-content {
+  justify-content: content !important;
+}
+
+/* 默认居左 */
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+/* 默认靠俩边 */
+
+.justify-content-space-between {
+  justify-content: space-between !important;
+}
+
+/* 块级  */
+
+.block {
+  display: block !important;
+}
+
+/* 行内块级  */
+
+.inline-block {
+  display: inline-block !important;
+}
+
+/* 行内  */
+
+.inline {
+  display: inline !important;
+}
+
+/* 消失元素不占地方 */
+
+.none {
+  display: none !important;
+}
+
+/* 消失元素占地方 */
+
+.visibility-hidden {
+  visibility: hidden;
+}
